@@ -1,15 +1,14 @@
 //
-//  TDDPracTests.swift
-//  TDDPracTests
+//  ViewControllerTests.swift
+//  TDDPrac
 //
 //  Created by Ling on 5/29/17.
 //  Copyright © 2017 LingZT. All rights reserved.
 //
 
 import XCTest
-@testable import TDDPrac
 
-class TDDPracTests: XCTestCase {
+class ViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
