@@ -7,8 +7,11 @@
 //
 
 import XCTest
+@testable import TDDPrac
 
 class ViewControllerTests: XCTestCase {
+    
+    let viewController = ViewController()
     
     override func setUp() {
         super.setUp()
@@ -20,16 +23,24 @@ class ViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testIsNumberEven () {
+        let odd = 9
+        let even = 10
+        XCTAssertTrue(viewController.inNumberEven(num: even))
+        XCTAssertFalse(viewController.inNumberEven(num: odd))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testsumEvenValuedNumberFibonaciSequence() {
+        let limit1 = 6
+        let answer1 = 5
+        XCTAssertEqual(viewController.fibonaciSequence(limit: limit1), answer1)
+        
+        
+        let limit2 = 15
+        let answer2 = 13
+        XCTAssertEqual(viewController.fibonaciSequence(limit: limit2), answer2)
     }
+    
+    
     
 }

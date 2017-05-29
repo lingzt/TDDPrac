@@ -12,7 +12,7 @@
 		14A67D1C1EDCAC99000C1D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A67D1A1EDCAC99000C1D06 /* Main.storyboard */; };
 		14A67D1E1EDCAC99000C1D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A67D1D1EDCAC99000C1D06 /* Assets.xcassets */; };
 		14A67D211EDCAC99000C1D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A67D1F1EDCAC99000C1D06 /* LaunchScreen.storyboard */; };
-		14A67D2C1EDCAC99000C1D06 /* TDDPracTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A67D2B1EDCAC99000C1D06 /* TDDPracTests.swift */; };
+		14A67D391EDCB157000C1D06 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A67D381EDCB157000C1D06 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		14A67D201EDCAC99000C1D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14A67D221EDCAC99000C1D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A67D271EDCAC99000C1D06 /* TDDPracTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPracTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A67D2B1EDCAC99000C1D06 /* TDDPracTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPracTests.swift; sourceTree = "<group>"; };
 		14A67D2D1EDCAC99000C1D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A67D381EDCB157000C1D06 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTests.swift; path = ../ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 		14A67D2A1EDCAC99000C1D06 /* TDDPracTests */ = {
 			isa = PBXGroup;
 			children = (
-				14A67D2B1EDCAC99000C1D06 /* TDDPracTests.swift */,
+				14A67D381EDCB157000C1D06 /* ViewControllerTests.swift */,
 				14A67D2D1EDCAC99000C1D06 /* Info.plist */,
 			);
 			path = TDDPracTests;
@@ -152,6 +152,7 @@
 					14A67D261EDCAC99000C1D06 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = TM264FVPQ8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 14A67D121EDCAC99000C1D06;
 					};
@@ -210,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A67D2C1EDCAC99000C1D06 /* TDDPracTests.swift in Sources */,
+				14A67D391EDCB157000C1D06 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +371,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TM264FVPQ8;
 				INFOPLIST_FILE = TDDPracTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = come.LingZT.TDDPracTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDPrac.app/TDDPrac";
 			};
@@ -385,6 +388,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TM264FVPQ8;
 				INFOPLIST_FILE = TDDPracTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
